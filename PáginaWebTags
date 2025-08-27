@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro Website</title>
+</head>
+<body>
+
+    <!-- Títulos -->
+    <h1>Bem-vindo ao meu primeiro website!</h1>
+    <h2>Aprendendo HTML</h2>
+    <h3>Tags básicas</h3>
+    <h4>Exemplo prático</h4>
+    <h5>Subseção menor</h5>
+    <h6>Rodapé do título</h6>
+
+    <hr>
+
+    <!-- Parágrafos e formatações -->
+    <p>Este é um <strong>parágrafo</strong> de exemplo para mostrar diferentes <i>formatações</i> em HTML.</p>
+    <p>Podemos <u>sublinhar</u>, usar <mark>marcação de texto</mark> e também <small>escrever em tamanho menor</small>.</p>
+    <p>Exemplo de números com <sup>expoente</sup> e <sub>índice</sub>.</p>
+    <p>Palavra antiga: <del>computador pessoal</del> → Palavra correta: <strong>PC</strong></p>
+
+    <!-- Lista ordenada -->
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <!-- Lista não ordenada -->
+    <h2>Lista não ordenada</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <!-- Links -->
+    <p>Visite o site do <a href="https://www.google.com" target="_blank">Google</a> para mais informações.</p>
+
+    <!-- Citação -->
+    <blockquote>
+        "O aprendizado nunca esgota a mente." - Leonardo da Vinci
+    </blockquote>
+
+    <!-- Abreviação -->
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+
+    <!-- Exemplo com <font> (tag antiga, não recomendada, mas pedida no desafio) -->
+    <p><font color="blue" size="4" face="Arial">Este texto usa a tag &lt;font&gt; (obsoleta, mas ainda funciona em alguns navegadores).</font></p>
+
+</body>
+</html>
