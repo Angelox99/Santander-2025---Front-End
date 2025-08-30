@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="menu-left">
+      <button class="menu-btn">☰</button>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo YouTube" class="logo">
+    </div>
+    <div class="menu-center">
+      <input type="text" placeholder="Pesquisar" class="search-bar">
+      <button class="search-btn">🔍</button>
+    </div>
+    <div class="menu-right">
+      <button class="icon-btn">📹</button>
+      <button class="icon-btn">🔔</button>
+      <img src="assets/user.png" alt="User" class="user-icon">
+    </div>
+  </header>
+
+  <!-- Container principal -->
+  <main class="container">
+    <!-- Vídeo principal -->
+    <section class="video-section">
+
+      <div class="video-placeholder">
+        <img class="video-thumb" src="assets/Video.png" alt="Thumbnail do vídeo">
+      </div>
+
+      <h2>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h2>
+      
+      <div class="video-header">
+        <div class="channel-info">
+          <img src="assets/canal.png" alt="Canal" class="channel-icon">
+          <div>
+            <h3>DIO</h3>
+            <p>83,3 mil inscritos</p>
+          </div>
+        </div>
+        <div class="actions-inline">
+          <button class="subscribe-btn">INSCREVA-SE</button>
+          <button>👍 2 mil</button>
+          <button>👎 Não gostei</button>
+          <button>🔗 Compartilhar</button>
+          <button>⬇️ Download</button>
+        </div>
+      </div>
+
+      <p class="video-description">
+        <h5>28.418 visualizações • Transmitido ao vivo em 23 ago. de 2022</h5>
+        Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
+      </p>
+    </section>
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="suggestion">
+        <img src="assets/thumb01.png" alt="thumb" class="thumb">
+        <div class="suggestion-info">
+          <h4>Geração Tech Unimed - BH - Ciência de Dados</h4>
+          <p>DigitalInnovationOne</p>
+          <p>20 mil visualizações • há 2 dias</p>
+        </div>
+      </div>
+      <div class="suggestion">
+        <img src="assets/thumb02.png" alt="thumb" class="thumb">
+        <div class="suggestion-info">
+          <h4>Scrum Talks</h4>
+          <p>DigitalInnovationOne</p>
+          <p>55 mil visualizações • há 1 semana</p>
+        </div>
+      </div>
+      <div class="suggestion">
+        <img src="assets/thumb03.png" alt="thumb" class="thumb">
+        <div class="suggestion-info">
+          <h4>Machine Learning Avançado - Fast Track</h4>
+          <p>DigitalInnovationOne</p>
+          <p>100 mil visualizações • há 1 mês</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

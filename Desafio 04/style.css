@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  height: 25px;
+}
+
+.menu-center {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-bar {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-btn {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.video-section {
+  flex: 2;
+}
+
+/* Container do vídeo principal com 16:9 */
+.video-placeholder {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Thumbnail do vídeo */
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche igual ao YouTube */
+  display: block;
+}
+
+
+/* Canal + ações na mesma linha */
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-icon {
+  border-radius: 50%;
+}
+
+.actions-inline {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.suggestion {
+  display: flex;
+  gap: 10px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.thumb {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.suggestion-info h4 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.suggestion-info p {
+  font-size: 12px;
+  margin: 2px 0;
+  color: #555;
+}
