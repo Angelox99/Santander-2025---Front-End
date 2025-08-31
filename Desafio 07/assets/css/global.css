@@ -1,0 +1,96 @@
+#clearTypeButton {
+    padding: 8px 16px;
+    background: #fff;
+    color: #d90429;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(217,4,41,0.1);
+    transition: background 0.2s, color 0.2s;
+}
+
+#clearTypeButton:hover {
+    background: #ffd700;
+    color: #000;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #d90429 0%, #000 100%);
+}
+}
+
+body {
+    background-color: #fffbe6; /* branco dourado suave */
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+h1 {
+    color: #d90429; /* vermelho */
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 0 #ffd700, 2px 2px 0 #fff; /* dourado e branco */
+}
+
+.type-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#typeInput {
+    padding: 8px 12px;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    color: #d90429;
+    outline: none;
+}
+
+#typeInput:focus {
+    border-color: #d90429;
+}
+
+#typeSearchButton {
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #d90429 60%, #ffd700 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(217,4,41,0.1);
+    transition: background 0.2s;
+}
+
+#typeSearchButton:hover {
+    background: linear-gradient(90deg, #ffd700 40%, #d90429 100%);
+    color: #d90429;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
