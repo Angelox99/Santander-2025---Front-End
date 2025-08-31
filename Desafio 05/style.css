@@ -1,0 +1,243 @@
+:root{
+  --purple-1: #5b2df4;
+  --purple-2: #7f3df8;
+  --bg: #f6f6f8;
+  --card: #1f2937;
+  --text-dark: #111827;
+  --muted: #6b7280;
+  --radius: 999px;
+}
+
+*{box-sizing: border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text-dark);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+a{color:inherit; text-decoration:none}
+
+/* Layout container para centralizar conteúdo */
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:32px;
+}
+
+/* HERO (desktop) */
+.hero{
+  background: url('https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665643dd8c7ac752237b5cef_Discord-OG-1200x630.jpg') center center/cover no-repeat;
+  color: #fff;
+  padding:64px 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text{
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.4);
+  padding: 32px;
+  border-radius: 16px;
+}
+.hero h1{
+  font-family: "Baloo 2", "Poppins", sans-serif;
+  margin:0 0 12px 0;
+  font-size:48px;
+  line-height:1;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.hero p{
+  margin:0 0 26px 0;
+  opacity:0.95;
+  font-size:15px;
+  color: rgba(255,255,255,0.92);
+}
+
+.buttons{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+.btn{
+  padding:12px 22px;
+  border-radius:999px;
+  font-weight:600;
+  border:0;
+  cursor:pointer;
+  display:inline-block;
+  text-align:center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.btn--white{
+  background:#fff;
+  color:var(--purple-2);
+}
+.btn--dark{
+  background: rgba(0,0,0,0.7);
+  color:#fff;
+}
+
+/* Ilustração hero */
+.hero-illustration{
+  flex:0 0 520px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero-illustration img{
+  max-width:100%;
+  height:auto;
+  border-radius:18px;
+  box-shadow: 0 30px 50px rgba(0,0,0,0.25);
+}
+
+/* Content sections */
+section.content{
+  background:#fff;
+  padding:48px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.section-grid{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  justify-content:space-between;
+}
+.section-grid .text{
+  flex:1 1 48%;
+}
+.section-grid .media{
+  flex:0 0 420px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.section-grid .media img{
+  width:100%;
+  max-width:420px;
+  border-radius:14px;
+  box-shadow: 0 20px 40px rgba(16,24,40,0.08);
+}
+.section-grid h2{
+  margin:0 0 14px 0;
+  font-size:28px;
+  font-weight:700;
+}
+.section-grid p{margin:0;color:var(--muted)}
+
+/* Small badges */
+.badge{
+  display:inline-block;
+  background:#0f1724;
+  color:#a7f3d0;
+  padding:6px 10px;
+  border-radius:10px;
+  font-size:13px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+
+/* CTA / tech section */
+.tech{
+  text-align:center;
+  padding:48px 0 64px 0;
+}
+.tech h3{
+  margin:0 0 18px 0;
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+.tech p{max-width:800px;margin:0 auto;color:var(--muted)}
+
+/* Footer */
+footer{
+  padding:28px 0;
+  text-align:center;
+  background: #1f2937;
+  color:#fff;
+}
+footer .logo{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  font-weight:700;
+  font-size:18px;
+}
+footer .logo svg{width:36px;height:24px;opacity:0.95}
+
+/* RESPONSIVE (mobile) */
+@media (max-width: 900px){
+  .hero h1{font-size:40px}
+}
+
+@media (max-width: 768px){
+  .wrap{padding:20px}
+  .hero{
+    padding:36px 0;
+    border-radius:0;
+  }
+  .hero .wrap{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+  }
+  .hero-text{width:100%}
+  .hero h1{
+    font-size:32px;
+    text-align:left;
+  }
+  .hero p{text-align:left}
+  .buttons{
+    flex-direction:column;
+    width:100%;
+  }
+  .btn{width:100%;}
+  .hero-illustration{width:100%; flex-basis:auto}
+  .hero-illustration img{max-width:420px;width:100%}
+
+  .section-grid{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:18px;
+  }
+  .section-grid .text{width:100%}
+  .section-grid .media{width:100%;flex-basis:auto}
+  .section-grid .media img{max-width:100%}
+
+  .section-grid h2{font-size:22px}
+  .tech h3{font-size:22px}
+  footer{padding:20px}
+}
+
+/* Pequenas melhorias visuais */
+@media (prefers-reduced-motion: no-preference){
+  .hero-illustration img,
+  .section-grid .media img{
+    transition: transform .5s ease, box-shadow .4s ease;
+  }
+  .hero-illustration img:hover,
+  .section-grid .media img:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 40px 60px rgba(0,0,0,0.25);
+  }
+}
